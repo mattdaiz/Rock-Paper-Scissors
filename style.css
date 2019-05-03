@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.transparent {
+    opacity: 0.5;
+}
+
+.flex-parent {
+    background-color: rgb(255, 255, 255);
+    display:flex;
+}
+
+.flex-child {
+    flex: 1;
+    text-align: center;
+}
+
+.border {
+    border: solid;
+}
+
+#btnRock {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rock-paper-scissors_%28rock%29.png/1280px-Rock-paper-scissors_%28rock%29.png");
+    background-color: Transparent;
+}
+
+#btnPaper {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/1280px-Rock-paper-scissors_%28paper%29.png");
+    background-color: Transparent;
+}
+
+#btnScissors {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/1280px-Rock-paper-scissors_%28scissors%29.png");
+    background-color: Transparent;
+}
+
+.glowing-border {
+    border: 2px solid #2500fa;
+    transform: scale(1.5);
+}
+
+.opponentImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid #c0bfc2;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.reset {
+    margin-top: 25px;
+    width: 100%;
+}
