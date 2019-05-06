@@ -8,35 +8,41 @@
 </head>
 
 <body>
-  <div style="text-align: center">Test</div>
-  <div class="flex-parent">
-    <div class="flex-child">
-      <div>
-        <div id="roundText" style="text-align: center">Round</div>
-      </div>
-      <div class="flex-parent">
-        <div class="flex-child border">You</div>
-        <div class="flex-child border">Opponent</div>
-      </div>
-      <div class="flex-parent">
-        <div id="userScore" class="flex-child"></div>
-        <div id="opponentScore" class="flex-child"></div>
-      </div>
+  <div id="header">
+    <div id="roundText">Round</div>
 
-      <div id=opponentImage class=opponentImage></div>
+    <div id="userOpponent" class="flex-parent">
+      <div class="flex-child border">You</div>
+      <div class="flex-child border">Tie</div>
+      <div class="flex-child border">Opponent</div>
+    </div>
 
-      <div>
-        <button id=btnRock></button>
-        <button id=btnPaper></button>
-        <button id=btnScissors></button>
-      </div>
+    <div id="scores" class="flex-parent">
+      <div id="userScore" class="flex-child"></div>
+      <div id="tiedScore" class="flex-child"></div>
+      <div id="opponentScore" class="flex-child"></div>
+    </div>
+  </div>
 
-      <div>
-        <button id="reset" class=reset>Reset</button>
+  <div id="gameArea" class="flex-parent">
+    <div id="user" class="flex-child">
+      <div id=userImage class="userImage"></div>
+      <button id=btnRock></button>
+      <button id=btnPaper></button>
+      <button id=btnScissors></button>
+    </div>
+
+    <div id="results" class="flex-child">
+      <div id="resultText">
+        <ul id=resultList></ul>
       </div>
     </div>
-    <div class="flex-child"> Test</div>
+
+    <div id="opponent" class="flex-child">
+      <div id=opponentImage class=opponentImage></div>
+    </div>
   </div>
+
 </body>
 <script type="text/javascript" src=javascript.js></script>
 
